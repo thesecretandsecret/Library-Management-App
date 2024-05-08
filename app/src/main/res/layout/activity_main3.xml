@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextMemberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Member ID" />
+
+    <EditText
+        android:id="@+id/editTextBookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMemberId"
+        android:layout_marginTop="8dp"
+        android:hint="Book ID" />
+
+    <EditText
+        android:id="@+id/editTextLendingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBookId"
+        android:layout_marginTop="8dp"
+        android:hint="Lending Date" />
+
+    <EditText
+        android:id="@+id/editTextReturnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLendingDate"
+        android:layout_marginTop="8dp"
+        android:hint="Return Date" />
+
+    <Button
+        android:id="@+id/btnAddLending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextReturnDate"
+        android:layout_marginTop="16dp"
+        android:background="#E31D1D"
+        android:text="Add Lending" />
+
+    <Button
+        android:id="@+id/btnViewLendings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddLending"
+        android:layout_marginTop="16dp"
+        android:text="View Lendings" />
+
+    <Button
+        android:id="@+id/btnUpdateLending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewLendings"
+        android:layout_marginTop="16dp"
+        android:text="Update Lending" />
+
+    <Button
+        android:id="@+id/btnDeleteLending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdateLending"
+        android:layout_marginTop="16dp"
+        android:text="Delete Lending" />
+
+    <Button
+        android:id="@+id/btnHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Back to Book Page" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginTop="8dp"
+        android:hint="Author" />
+
+    <EditText
+        android:id="@+id/editTextPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAuthor"
+        android:layout_marginTop="8dp"
+        android:hint="Publisher" />
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPublisher"
+        android:layout_marginTop="16dp"
+        android:text="Add Book"
+        android:background="#E31D1D" />
+
+    <Button
+        android:id="@+id/btnViewBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddBook"
+        android:layout_marginTop="8dp"
+        android:text="View Books"
+        android:background="#E31D1D" />
+
+    <EditText
+        android:id="@+id/editTextBookid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewBooks"
+        android:layout_marginTop="8dp"
+        android:hint="Enter book ID" />
+
+    <Button
+        android:id="@+id/btnDeleteBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBookid"
+        android:layout_marginTop="16dp"
+        android:text="Delete Book"
+        android:background="#E31D1D" />
+
+    <Button
+        android:id="@+id/btnMemberspage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDeleteBook"
+        android:layout_marginTop="16dp"
+        android:text="Go to Members Page"
+        android:background="#E31D1D" />
+
+    <Button
+        android:id="@+id/btnLendingPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMemberspage"
+        android:layout_marginTop="16dp"
+        android:text="Go to Lending Information"
+        android:background="#E31D1D" />
+
+</RelativeLayout>

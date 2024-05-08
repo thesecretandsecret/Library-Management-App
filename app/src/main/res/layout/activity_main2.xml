@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextCardNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginBottom="16dp"
+        android:hint="Card Number" />
+
+    <Button
+        android:id="@+id/btnAddMemeber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCardNo"
+        android:background="#E31D1D"
+        android:text="Add Member"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnViewMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddMemeber"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="View Members" />
+
+    <EditText
+        android:id="@+id/editTextDeleteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewMembers"
+        android:layout_marginTop="16dp"
+        android:hint="Enter name to delete" />
+
+    <EditText
+        android:id="@+id/editTextDeleteCardNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDeleteName"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Card No" />
+
+    <Button
+        android:id="@+id/btnDeleteMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDeleteCardNo"
+        android:layout_marginTop="16dp"
+        android:text="Delete Member" />
+
+    <Button
+        android:id="@+id/btnHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Back to Book Page" />
+
+</RelativeLayout>
